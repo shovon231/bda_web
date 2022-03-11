@@ -1,0 +1,31 @@
+@media (max-width: 600px) {
+  .toggle-button {
+    display: flex;
+  }
+  .navbar {
+    height: 20rem;
+  }
+  h1,
+  .navbar-link {
+    display: none;
+  }
+  .navbar .flex {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .navbar ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar li {
+    text-align: center;
+  }
+  .navbar li a {
+    padding: 5rem 1rem;
+  }
+  .navbar.active {
+    display: flex;
+  }
+}
