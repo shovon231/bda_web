@@ -2,16 +2,14 @@
   .toggle-button {
     display: flex;
   }
-  .navbar {
-    height: 20rem;
-  }
-  h1,
-  .navbar-link {
+
+  .navbar-links {
     display: none;
   }
+
   .navbar .flex {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: space-around;
     align-items: center;
   }
@@ -22,10 +20,18 @@
   .navbar li {
     text-align: center;
   }
-  .navbar li a {
+  .navbar-links li a {
     padding: 5rem 1rem;
   }
-  .navbar.active {
+
+  .navbar-links.active {
     display: flex;
+  }
+  .navbar.active {
+    height: 100vh;
+    width: 50vw;
+    float: right;
+    opacity: 0.5;
+    color: #333;
   }
 }
