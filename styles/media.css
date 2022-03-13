@@ -2,10 +2,12 @@
   body {
     overflow-x: hidden;
   }
-  .toggle-button {
+  /* .toggler {
+    display: block;
+  } */
+  .hamburger {
     display: flex;
   }
-
   .navbar-links {
     /* display: none; */
     position: absolute;
@@ -41,15 +43,28 @@
       transform: translateX(0px);
     }
   }
-  .toggleMenu .bar1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
+
+  .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+  }
+  .toggler:checked + .hamburger > div:before,
+  .toggler:checked + .hamburger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  .toggler:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+  }
+
+  /* .toggleMenu .bar1 {
+    transform: rotate(-225deg) translate(-6px, 5px);
   }
   .toggleMenu .bar2 {
     opacity: 0;
   }
   .toggleMenu .bar3 {
-    transform: rotate(45deg) translate(-5px, -6px);
-  }
+    transform: rotate(-225deg) translate(-6px, -5px);
+  } */
   /* .navbar .flex {
     flex-direction: column;
     align-items: flex-end;

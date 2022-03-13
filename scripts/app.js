@@ -6,7 +6,7 @@
 // });
 
 const navShow = () => {
-  const toggleButton = document.querySelector(".toggle-button");
+  const toggleButton = document.querySelector(".toggler");
   const navbar = document.querySelector(".navbar-links");
   const navbarLinks = document.querySelectorAll(".navbar-links li");
 
