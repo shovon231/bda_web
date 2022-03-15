@@ -25,7 +25,8 @@ a {
   color: #333;
 }
 h1,
-h2 {
+h2,
+h3 {
   font-weight: 300;
   line-height: 1.2;
   margin: 10px 0;
@@ -36,10 +37,16 @@ p {
 img {
   width: 100%;
 }
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+/* navbar */
 .navbar {
   background-color: var(--primary-color);
   color: #fff;
   height: 70px;
+  border-bottom: 1px solid #fff;
 }
 .navbar .flex {
   justify-content: space-between;
@@ -48,11 +55,94 @@ img {
   display: flex;
 }
 
-.navbar-links a {
+.navbar a {
   color: #fff;
   padding: 10px;
   margin: 0 5px;
 }
-.navbar .navbar-link:hover {
+.navbar a:hover {
   border-bottom: 2px solid #fff;
+}
+/* showcase */
+.showcase {
+  height: 400px;
+  background-color: var(--primary-color);
+  color: #fff;
+  position: relative;
+}
+.showcase h2 {
+  font-size: 40px;
+}
+.showcase h3 {
+  font-size: 25px;
+}
+.showcase p {
+  margin: 20px 0;
+}
+.showcase .grid {
+  overflow: visible;
+  grid-template-columns: 55% 45%;
+  gap: 30px;
+}
+.showcase-form {
+  position: relative;
+  top: 60px;
+  height: 350px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+}
+.showcase-form .form-control {
+  margin: 30px 0;
+}
+.showcase-form input[type="text"],
+.showcase-form input[type="email"] {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
+.showcase-form input:focus {
+  outline: none;
+}
+.showcase::before,
+.showcase::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background: #fff;
+  transform: skewY(-3deg);
+  /*
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+  */
+}
+/* Stats */
+.stats {
+  padding-top: 100px;
+}
+.stats-heading {
+  max-width: 500px;
+  margin: auto;
+  font-size: 2rem;
+}
+.stats .grid h3 {
+  font-size: 30px;
+}
+.stats .grid p {
+  font-size: 20px;
+  font-weight: bold;
+}
+/* cloud */
+.cloud .grid {
+  overflow: visible;
+  grid-template-columns: 4fr 3fr;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
