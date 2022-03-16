@@ -122,6 +122,28 @@ img {
   -ms-transform: skewY(-3deg);
   */
 }
+/* about-showcase */
+.about-showcase {
+  height: 620px;
+  background-color: var(--primary-color);
+  color: #fff;
+  position: relative;
+}
+.about-showcase h2 {
+  font-size: 40px;
+}
+.about-showcase h3 {
+  font-size: 25px;
+}
+.about-showcase p {
+  margin: 20px 0;
+}
+.about-showcase .grid {
+  grid-template-columns: 1fr;
+  grid-template-rows: 30% 70%;
+  overflow: visible;
+  gap: 30px;
+}
 /* Stats */
 .stats {
   padding-top: 100px;
