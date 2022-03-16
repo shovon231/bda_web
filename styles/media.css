@@ -1,6 +1,10 @@
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
+  html,
   body {
     overflow-x: hidden;
+  }
+  .navbar .logo {
+    font-size: 30px;
   }
 
   .navbar {
@@ -35,7 +39,8 @@
     display: none;
   }
 }
-@media (max-width: 615px) {
+@media screen and (max-width: 615px) {
+  html,
   body {
     overflow-x: hidden;
   }
@@ -76,11 +81,16 @@
   .navbar-links.active {
     transform: translateX(0%);
   }
-  /* @media (max-width: 1000px) {
+  @media screen and (max-width: 375px) {
+    html,
     body {
       overflow-x: hidden;
+      position: relative;
     }
-  } */
+    .navbar .logo {
+      font-size: 30px;
+    }
+  }
   @keyframes linkShow {
     from {
       opacity: 0;
