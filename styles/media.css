@@ -43,21 +43,16 @@
   html,
   body {
     overflow-x: hidden;
+    position: relative;
   }
   .navbar .logo {
     font-size: 30px;
   }
-  /* .navbar {
-    height: 70px;
-  } */
-  /* .toggler {
-    display: block;
-  } */
+
   .hamburger {
     display: flex;
   }
   .navbar-links {
-    /* display: none; */
     z-index: 101;
     position: absolute;
     right: 0px;
@@ -81,36 +76,46 @@
   .navbar-links.active {
     transform: translateX(0%);
   }
-  @media screen and (max-width: 375px) {
-    html,
-    body {
-      overflow-x: hidden;
-      position: relative;
-    }
-    .navbar .logo {
-      font-size: 30px;
-    }
+}
+@media screen and (max-width: 375px) {
+  html,
+  body {
+    overflow-x: hidden;
+    position: relative;
   }
-  @keyframes linkShow {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0px);
-    }
+  .navbar .logo {
+    font-size: 30px;
   }
+  .showcase .h2 {
+    font-size: 20px;
+  }
+  .showcase p {
+    font-size: 15px;
+    margin: 20px 10px;
+  }
+  .showcase-form {
+    width: 350px;
+  }
+}
+@keyframes linkShow {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
 
-  .toggler:checked + .hamburger > div {
-    transform: rotate(135deg);
-  }
-  .toggler:checked + .hamburger > div:before,
-  .toggler:checked + .hamburger > div:after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-  .toggler:checked:hover + .hamburger > div {
-    transform: rotate(225deg);
-  }
+.toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+.toggler:checked + .hamburger > div:before,
+.toggler:checked + .hamburger > div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+.toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
 }
