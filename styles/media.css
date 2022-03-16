@@ -1,4 +1,8 @@
 @media (max-width: 1000px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .navbar {
     height: 110px;
   }
@@ -35,9 +39,12 @@
   body {
     overflow-x: hidden;
   }
-  .navbar {
-    height: 70px;
+  .navbar .logo {
+    font-size: 30px;
   }
+  /* .navbar {
+    height: 70px;
+  } */
   /* .toggler {
     display: block;
   } */
@@ -69,7 +76,11 @@
   .navbar-links.active {
     transform: translateX(0%);
   }
-
+  /* @media (max-width: 1000px) {
+    body {
+      overflow-x: hidden;
+    }
+  } */
   @keyframes linkShow {
     from {
       opacity: 0;
