@@ -168,3 +168,16 @@ img {
   align-items: center;
   gap: 30px;
 }
+/* products */
+.products .card {
+  text-align: center;
+  margin: 18px 10px 40px;
+}
+
+.card h2 {
+  font-weight: 350;
+}
+.card h4 {
+  font-weight: 300;
+  font-size: 15px;
+}
