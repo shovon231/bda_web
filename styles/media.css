@@ -81,7 +81,8 @@
   .navbar-links ul {
     display: flex;
     flex-direction: column;
-    width: 30vh;
+    /* width: 30vh; */
+    width: 55vh;
     height: 92vh;
     align-items: center;
     justify-content: space-around;
