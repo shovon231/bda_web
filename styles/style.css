@@ -35,7 +35,8 @@ p {
   margin: 10px 0;
 }
 img {
-  width: 100%;
+  max-width: 100%;
+  display: block;
 }
 .hidden {
   visibility: hidden;
@@ -173,11 +174,24 @@ img {
   text-align: center;
   margin: 18px 10px 40px;
 }
-
-.card h2 {
+.products .grid {
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+.products .card {
+  width: 100%;
+  aspect-ratio: 1 / 1.5;
+}
+.products .card h2 {
   font-weight: 350;
 }
-.card h4 {
+.products .card h4 {
   font-weight: 300;
   font-size: 15px;
+}
+
+/* About */
+
+.about-container {
+  display: grid;
+  gap: 1.5rem;
 }
