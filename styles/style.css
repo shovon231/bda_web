@@ -196,3 +196,45 @@ img {
   gap: 1.5rem;
 }
 /* accordian */
+.accordian-link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.accordian-link i {
+  padding: 0.5rem;
+}
+.accordian-link .fa-caret-up {
+  display: none;
+}
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  transition: max-height 650ms;
+}
+.answer::before {
+  content: "";
+  position: absolute;
+  width: 0.6rem;
+  height: 90%;
+  background-color: #8fc460;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.answer p {
+  padding-left: 2rem;
+}
+.accordian-item:target .answer {
+  max-height: 20rem;
+}
+.accordian-item:target .accordian-link .fa-caret-down {
+  display: none;
+}
+
+.accordian-item:target .accordian-link .fa-caret-up {
+  display: block;
+}
