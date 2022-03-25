@@ -128,6 +128,22 @@
 .m-5 {
   margin: 4rem;
 }
+/* margin-bottom */
+.mb-1 {
+  padding: 1rem;
+}
+.mb-2 {
+  padding: 1.5rem;
+}
+.mb-3 {
+  padding: 2rem;
+}
+.mb-4 {
+  padding: 3rem;
+}
+.mb-5 {
+  padding: 4rem;
+}
 /*Padding*/
 .py-1 {
   padding: 1rem 0;
