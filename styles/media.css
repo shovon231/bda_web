@@ -44,6 +44,9 @@
   .showcase {
     height: auto;
   }
+  .showcase h2 {
+    margin-top: 5rem;
+  }
   .showcase-text {
     text-align: center;
     margin-top: 40px;

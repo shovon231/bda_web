@@ -48,7 +48,14 @@ img {
   color: #fff;
   height: 70px;
   border-bottom: 1px solid #fff;
+  position: fixed;
+  z-index: 1004;
+  width: 100%;
 }
+/* .sticky {
+  position: fixed;
+  z-index: 100000;
+} */
 .navbar .flex {
   justify-content: space-between;
 }
@@ -213,7 +220,7 @@ img {
   max-height: 0;
   overflow: hidden;
   position: relative;
-  transition: max-height 650ms;
+  transition: all 0.5s ease;
 }
 .answer::before {
   content: "";
@@ -228,13 +235,16 @@ img {
 .answer p {
   padding-left: 2rem;
 }
-.accordian-item:target .answer {
-  max-height: 20rem;
+/* .is-open {
+  /* transition: all 650ms; 
+} */
+.is-open > .answer {
+  display: block;
+  /* max-height: 20rem; */
 }
-.accordian-item:target .accordian-link .fa-caret-down {
+.is-open + .fa-caret-down {
   display: none;
 }
-
-.accordian-item:target .accordian-link .fa-caret-up {
+.is-open + .fa-caret-up {
   display: block;
 }
