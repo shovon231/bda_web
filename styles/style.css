@@ -52,10 +52,7 @@ img {
   z-index: 1004;
   width: 100%;
 }
-/* .sticky {
-  position: fixed;
-  z-index: 100000;
-} */
+
 .navbar .flex {
   justify-content: space-between;
 }
@@ -220,7 +217,7 @@ img {
   max-height: 0;
   overflow: hidden;
   position: relative;
-  transition: all 0.5s ease;
+  transition: max height 650ms;
 }
 .answer::before {
   content: "";
@@ -239,12 +236,12 @@ img {
   /* transition: all 650ms; 
 } */
 .is-open > .answer {
-  display: block;
-  /* max-height: 20rem; */
+  /* display: block; */
+  max-height: 20rem;
 }
-.is-open + .fa-caret-down {
+.is-open > .accordian-link > .fa-caret-down {
   display: none;
 }
-.is-open + .fa-caret-up {
+.is-open > .accordian-link > .fa-caret-up {
   display: block;
 }
