@@ -245,13 +245,3 @@ img {
 .is-open > .accordian-link > .fa-caret-up {
   display: block;
 }
-/* training */
-.inner > .card {
-  background-color: #333;
-  padding: 0px 20px;
-  width: 350px;
-  color: #fff;
-}
-.portfolioImg {
-  clip-path: circle();
-}
