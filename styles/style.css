@@ -5,6 +5,21 @@
   --dark-color: #02345f;
   --light-color: #f4f4f4;
   --main-color: rgba(96, 134, 218, 0.75);
+  --clr-primary-400: 263 55% 52%;
+  --clr-secondary-400: 217 19% 35%;
+  --clr-secondary-500: 219 29% 14%;
+  --clr-neutral-100: 0 0% 100%;
+  --clr-neutral-200: 210 46% 95%;
+  --clr-neutral-300: 0 0% 81%;
+
+  --ff-primary: "Barlow Semi Condensed", sans-serif;
+
+  --fw-400: 500;
+  --fw-700: 600;
+
+  --fs-300: 0.6875rem;
+  --fs-400: 0.8125rem;
+  --fs-500: 1.25rem;
 }
 
 * {
@@ -256,6 +271,22 @@ img {
   clip-path: circle();
 }
 /* clients */
-.client > img {
-  display: inline-block;
+.clients {
+  max-width: 1100px;
+}
+.clients-img {
+  object-fit: cover;
+}
+.client-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.client-card {
+  padding: 10px;
+  margin: 5px;
+}
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--flow-spacer, 1em);
 }

@@ -21,6 +21,11 @@
 .grid-3 {
   grid-template-columns: repeat(3, 1fr);
 }
+.grid-1 {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(1, 1fr);
+}
 .card {
   background-color: #fff;
   border-radius: 10px;
@@ -48,6 +53,30 @@
   transform: scale(0.98);
 }
 /*background */
+.bg-primary-400 {
+  background: hsl(var(--clr-primary-400));
+}
+.bg-secondary-400 {
+  background: hsl(var(--clr-secondary-400));
+}
+.bg-secondary-500 {
+  background: hsl(var(--clr-secondary-500));
+}
+
+.bg-neutral-100 {
+  background: hsl(var(--clr-neutral-100));
+}
+
+.text-neutral-100 {
+  color: hsl(var(--clr-neutral-100));
+}
+.text-secondary-400 {
+  color: hsl(var(--clr-secondary-400));
+}
+.border-primary-400 {
+  border: 2px solid #a775f1;
+}
+
 .bg-primary,
 .btn-primary {
   background-color: var(--primary-color);
