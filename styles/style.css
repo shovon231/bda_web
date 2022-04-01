@@ -272,7 +272,10 @@ img {
 }
 /* clients */
 .clients {
-  max-width: 1100px;
+  max-width: 900px;
+  max-height: 1000px;
+  overflow: hidden;
+  width: 100%;
 }
 .clients-img {
   object-fit: cover;
@@ -289,4 +292,16 @@ img {
 }
 .flow > *:where(:not(:first-child)) {
   margin-top: var(--flow-spacer, 1em);
+}
+/* .slide-wrapper {
+  max-width: 760px;
+  width: 100%;
+  height: 460px;
+} */
+
+.slides {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 0;
 }
